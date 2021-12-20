@@ -1,4 +1,50 @@
+:root {
+  --main-bg-color: rgba(7, 7, 26, 0.993);
+  --main-text-color: rgb(223, 123, 226);
+  --accent-color: rgba(255, 255, 255, 0.904);
+}
+
+body {
+  font-family: 'Dosis';
+  margin: 0;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: var(--main-bg-color);
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.navbar_logo {
+  font-size: 25px;
+  padding: 8px 12px;
+}
+.navbar_logo i {
+  color: var(--accent-color);
+  font-size: 25px;
+}
+
+.navbar_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 25em;
+  padding-right: 20px;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+  list-style: none;
+}
+
+.navbar_menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 10px;
 }
